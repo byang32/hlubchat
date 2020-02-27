@@ -2,7 +2,7 @@ defmodule HlubchatWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", HlubchatWeb.RoomChannel
+  channel "room:*", HlubchatWeb.RoomChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
