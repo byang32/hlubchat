@@ -1,2 +1,3 @@
+<h1>Hlub Chat</h1>
 <div id="messages"></div>
-<input id="chat-input" type="text" placeholder="say something..."></input>
+<input id="chat-input" type="text" placeholder="say something...">
