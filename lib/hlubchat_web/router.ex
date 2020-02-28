@@ -23,7 +23,7 @@ defmodule HlubchatWeb.Router do
     pipe_through :browser
 
     get "/:provider", AuthController, :request
-    get "/:provider", AuthController, :callback
+    get "/:provider/callback", AuthController, :callback
   end
 
   # Other scopes may use custom stacks.
