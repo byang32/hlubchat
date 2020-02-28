@@ -8,4 +8,9 @@ defmodule HlubchatWeb.RoomChannel do
     def join("room:" <> _private_room_id, _params, _socket) do
         {:error, %{reason: "This is a private chat, you must be invited"}}
     end
+
+    def handle_in("new_msg", %{"body" => body}, socket) do
+        broadcast!(socket, "new_msg", %{body: body})
+        {:noreply, socket}
+    end
 end
