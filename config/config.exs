@@ -29,12 +29,12 @@ config :phoenix, :json_library, Jason
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
 
-#Config facebook ueberauth
+#Config Github ueberauth
 config :ueberauth, Ueberauth,
   providers: [
-    facebook: {Ueberauth.Strategry.Facebook, []}
+    github: {Ueberauth.Strategy.Github, []}
   ]
 
-config :ueberauth, Ueberauth.Strategry.Facebook.OAuth,
-  client_id: System.get_env("FACEBOOK_CLIENT_ID"),
-  client_secret: System.get_env("FACEBOOK_CLIENT_SECRET")
+config :ueberauth, Ueberauth.Strategy.Github.OAuth,
+  client_id: "8fa85e6749f68526f2af",
+  client_secret: "03d909a39548c0dacff5887984091f9a8b59708a"
