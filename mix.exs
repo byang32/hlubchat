@@ -20,7 +20,7 @@ defmodule Hlubchat.MixProject do
   def application do
     [
       mod: {Hlubchat.Application, []},
-      extra_applications: [:logger, :runtime_tools, :ueberauth, :ueberauth_github]
+      extra_applications: [:logger, :runtime_tools, :ueberauth, :ueberauth_github, :ueberauth_facebook]
     ]
   end
 
@@ -45,7 +45,8 @@ defmodule Hlubchat.MixProject do
       {:poison, "~> 3.1"},
       {:plug_cowboy, "~> 2.0"},
       {:ueberauth, "~> 0.6.2"},
-      {:ueberauth_github, "~> 0.7"}
+      {:ueberauth_github, "~> 0.7"},
+      {:ueberauth_facebook, "~> 0.8"}
     ]
   end
 
