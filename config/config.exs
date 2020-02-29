@@ -41,8 +41,8 @@ config :ueberauth, Ueberauth,
   ]
 
 config :ueberauth, Ueberauth.Strategy.Github.OAuth,
-  client_id: "8fa85e6749f68526f2af",
-  client_secret: "03d909a39548c0dacff5887984091f9a8b59708a"
+  client_id: "GITHUB_CLIENT_ID",
+  client_secret: "GITHUB_CLIENT_SECRET_KEY"
 
 config :ueberauth, Ueberauth,
   providers: [
@@ -50,5 +50,5 @@ config :ueberauth, Ueberauth,
   ]
 
 config :ueberauth, Ueberauth.Strategy.Facebook.OAuth,
-  client_id: "802001543610552",
-  client_secret: "8719ff3fdef614f134588ce8bba10156"
+  client_id: "FACEBOOK_CLIENT_ID",
+  client_secret: "FACEBOOK_CLIENT_SECRET_KEY"
