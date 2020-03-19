@@ -17,12 +17,14 @@ defmodule HlubchatWeb.Router do
   scope "/", HlubchatWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", LobbyController, :index
+    get "/chat/new", ChatController, :new
   end
 
   scope "/auth", HlubchatWeb do
     pipe_through :browser
 
+    get "/signout", AuthController, :signout
     get "/:provider", AuthController, :request
     get "/:provider/callback", AuthController, :callback
   end

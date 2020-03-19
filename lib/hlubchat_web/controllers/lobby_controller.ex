@@ -1,4 +1,4 @@
-defmodule HlubchatWeb.PageController do
+defmodule HlubchatWeb.LobbyController do
   use HlubchatWeb, :controller
 
   def index(conn, _params) do

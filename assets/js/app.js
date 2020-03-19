@@ -15,3 +15,8 @@ import "phoenix_html"
 //
 // Local files can be imported directly using relative paths, for example:
 import socket from "./socket"
+
+var mykey1 = config.KEY1_ID;
+var secretkey1 = config.KEY1_SECRET;
+var mykey2 = config.KEY2_ID;
+var secretkey2 = config.KEY2_SECRET;

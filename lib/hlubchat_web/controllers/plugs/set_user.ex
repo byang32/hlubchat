@@ -4,7 +4,6 @@ defmodule HlubchatWeb.Plugs.SetUser do
 
     alias Hlubchat.Repo
     alias Hlubchat.User
-    alias Hlubchat.Router.Helpers
 
     def init(_params) do
         
